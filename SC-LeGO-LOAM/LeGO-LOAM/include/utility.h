@@ -54,7 +54,7 @@ typedef pcl::PointXYZI  PointType;
 
 // extern const string pointCloudTopic = "/velodyne_points";
 // extern const string pointCloudTopic = "/kitti_scan";
-extern const string pointCloudTopic = "/os1_points";
+extern const string pointCloudTopic = "/points_concat";
 extern const string imuTopic = "/imu/data";
 
 // Save pcd

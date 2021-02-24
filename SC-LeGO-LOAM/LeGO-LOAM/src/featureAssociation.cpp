@@ -302,11 +302,11 @@ public:
         kdtreeCornerLast.reset(new pcl::KdTreeFLANN<PointType>());
         kdtreeSurfLast.reset(new pcl::KdTreeFLANN<PointType>());
 
-        laserOdometry.header.frame_id = "/camera_init";
-        laserOdometry.child_frame_id = "/laser_odom";
+        laserOdometry.header.frame_id = "map";
+        laserOdometry.child_frame_id = "odom";
 
-        laserOdometryTrans.frame_id_ = "/camera_init";
-        laserOdometryTrans.child_frame_id_ = "/laser_odom";
+        laserOdometryTrans.frame_id_ = "map";
+        laserOdometryTrans.child_frame_id_ = "odom";
         
         isDegenerate = false;
         matP = cv::Mat(6, 6, CV_32F, cv::Scalar::all(0));
